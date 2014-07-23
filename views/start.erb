@@ -1,0 +1,10 @@
+<form action="/start/submit" method="post" >
+	What's your name?: <br> <input type="text" name="Name"> <br>
+	<input type="submit" value="Submit" >
+</form>
+
+<% if @name == "" %>
+	<p> 'Please enter your name' </p>
+<% else %>
+	<p>Guten Tag, <%= @name %></p>
+<% end %>
